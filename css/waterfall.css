@@ -1,0 +1,32 @@
+@charset "utf-8";
+
+*{
+  margin: 0;
+  padding: 0;
+}
+#waterfall{
+  position: relative;
+  margin: 0 auto;
+}
+/* #waterfall:after{
+  content: ' ';
+  display: block;
+  clear: both;
+} */
+#waterfall .box{
+  float: left;
+  padding: 10px 5px;
+}
+#waterfall .box .picture{
+  padding: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #ccc;
+}
+#waterfall .box .picture img{
+  display: block; /*去除图片下面的空白间隙，display和vertical-align取一个就行*/
+  vertical-align: top;
+  width: 200px;
+  height: auto;
+  margin-bottom: 0;
+}
